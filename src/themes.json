@@ -11,8 +11,6 @@
             "font": "Roboto"
         }
     },
-        }
-    },
     {
         "name": "Winter",
         "id": "winter",
@@ -60,5 +58,5 @@
             "textInverse": "white",
             "font": "Roboto"
         }
-    },
+    }
 ]
