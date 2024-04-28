@@ -1,10 +1,10 @@
 {
-  "name": "metallic",
-  "version": "2.0.0",
-  "description": "A powerful web proxy built for speed and customization.",
-  "repository": "https://github.com/cognetwork-dev/Metallic",
+  "name": "Websurf",
+  "version": "0.2",
+  "description": "A powerful web proxy built for surfing the web with ease.Powered by Ultraviolet and forked from Cog Network.",
+  "repository": "https://github.com/accessgames/websurfproxi",
   "license": "MIT",
-  "author": "Nebelung",
+  "author": "Harveyay",
   "type": "module",
   "scripts": {
     "start": "npm run test && tsx index.ts",
@@ -52,7 +52,7 @@
     "vite": "^5.1.5"
   },
   "engines": {
-    "npm": ">=10.2.4",
+    "npm": ">=10.6.0",
     "node": ">=20.11.1"
   }
 }
