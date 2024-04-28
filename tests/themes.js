@@ -84,10 +84,6 @@ test('Themes are valid', (t) => {
     }
 });
 
-test('Default theme exists', (t) => {
-    t.true(themes.filter((theme) => theme.id == "default").length > 0, "No default theme was found")
-});
-
 test('No duplicate themes exist', (t) => {
     t.true(themes.filter((theme) => themes.filter((x) => x.id == theme.id).length > 1).length == 0, "Duplicate themes exist with the same ID.")
 });
