@@ -103,7 +103,7 @@ server.on('upgrade', (req: Request, socket: Socket, head: Head) => {
 
 server.on('listening', () => {
 	const theme = chalk.hex(themes.filter((theme) => theme.id = "default")[0].theme.primary);
-	console.log(`${chalk.bold(theme('Metallic'))}`)
+	console.log(`${chalk.bold(theme('Websurf'))}`)
 
 	console.log(
 		`- ${chalk.bold('Local:')} http://localhost:${port}`
