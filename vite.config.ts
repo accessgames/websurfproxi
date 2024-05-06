@@ -12,11 +12,13 @@ import { generateFile } from './src/util/generateFileVite';
 import { generateThemes } from './src/util/generateThemes';
 import themes from './src/themes.json';
 
-// https://vitejs.dev/config/
-export default defineConfig({
+export default {
   build: {
-    outDir: "build",
-  },
+    rollupOptions: {
+      external: ['/epoxy/index.js']
+    }
+  }
+}
   plugins: [
     viteStaticCopy({
       targets: [
