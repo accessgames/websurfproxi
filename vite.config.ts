@@ -1,5 +1,4 @@
-{
-import defineConfig } from 'vite';
+import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite'; 
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { createBareServer } from '@tomphttp/bare-server-node';
