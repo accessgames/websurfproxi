@@ -1,6 +1,5 @@
-{
 import { defineConfig } from 'vite';
-import preact from '@preact/preset-vite'; 
+import preact from '@preact/preset-vite';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { createBareServer } from '@tomphttp/bare-server-node';
 import wisp from "wisp-server-node";
@@ -13,13 +12,12 @@ import { generateFile } from './src/util/generateFileVite';
 import { generateThemes } from './src/util/generateThemes';
 import themes from './src/themes.json';
 
-export default {
+export default defineConfig({
   build: {
     rollupOptions: {
       external: ['/epoxy/index.js']
     }
-  }
-}
+  },
   plugins: [
     viteStaticCopy({
       targets: [
@@ -43,7 +41,7 @@ export default {
           "upgrade"
         ) as Parameters<(typeof server)["httpServer"]["on"]>[1][];
 
-        // remover other listeners
+        // remove other listeners
         for (const upgrader of upgraders) {
           server.httpServer.off("upgrade", upgrader);
         }
@@ -71,4 +69,4 @@ export default {
     ViteMinifyPlugin(),
     preact()
   ],
-    })
+});
